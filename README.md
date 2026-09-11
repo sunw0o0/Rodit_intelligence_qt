@@ -1,0 +1,1 @@
+# Rodit_intelligence_qt
