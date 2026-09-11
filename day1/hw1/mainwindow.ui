@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(72, 72, 72);
+color: rgb(255, 255, 255)</string>
+  </property>
+  <widget class="ArmCanvasWidget" name="centralwidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>10</y>
+      <width>241</width>
+      <height>267</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="5" column="3">
+      <widget class="QLineEdit" name="joint1_qe"/>
+     </item>
+     <item row="4" column="0" colspan="4">
+      <widget class="QPushButton" name="ga_btn">
+       <property name="text">
+        <string>Generate Arm</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="2">
+      <widget class="QSlider" name="joint2_hs">
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2" colspan="2">
+      <widget class="QDoubleSpinBox" name="link2_dsb"/>
+     </item>
+     <item row="6" column="3">
+      <widget class="QLineEdit" name="joint2_qe"/>
+     </item>
+     <item row="7" column="1">
+      <widget class="QLabel" name="joint3_lb">
+       <property name="text">
+        <string> joint3   </string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLabel" name="link_lb">
+       <property name="text">
+        <string> link1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="QSlider" name="joint1_hs">
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLabel" name="link2_lb">
+       <property name="text">
+        <string> link2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLabel" name="joint2_lb">
+       <property name="text">
+        <string> joint2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLabel" name="joint1_lb">
+       <property name="text">
+        <string> joint1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2" colspan="2">
+      <widget class="QDoubleSpinBox" name="link3_dsb"/>
+     </item>
+     <item row="8" column="0" colspan="4">
+      <widget class="QPushButton" name="reset_btn">
+       <property name="text">
+        <string>Reset</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="2">
+      <widget class="QSlider" name="joint3_hs">
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2" colspan="2">
+      <widget class="QDoubleSpinBox" name="link1_dsb"/>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLabel" name="link3_lb">
+       <property name="text">
+        <string> link3</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="3">
+      <widget class="QLineEdit" name="joint3_qe"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ArmCanvasWidget</class>
+   <extends>QWidget</extends>
+   <header>armcanvaswidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
